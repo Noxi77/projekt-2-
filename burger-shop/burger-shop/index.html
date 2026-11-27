@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Burgers – Products</title>
+</head>
+<body>
+
+  <!-- Boczny pasek (desktop) / górny pasek (mobile) -->
+  <aside>
+    <button type="button" aria-label="Search">
+      <img src="images/icon-search.svg" alt="">
+    </button>
+    <button type="button" aria-label="Open menu">
+      <img src="images/icon-menu.svg" alt="">
+    </button>
+  </aside>
+
+  <header>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" aria-current="page">Products</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <a href="#">Log in</a>
+      <a href="#">Sign up</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Produkt wyróżniony -->
+    <section aria-labelledby="featured-title">
+      <article>
+        <ul aria-label="Slides">
+          <li><button type="button" aria-label="Slide 1" aria-current="true"></button></li>
+          <li><button type="button" aria-label="Slide 2"></button></li>
+          <li><button type="button" aria-label="Slide 3"></button></li>
+          <li><button type="button" aria-label="Slide 4"></button></li>
+        </ul>
+
+        <p><strong>472</strong> <span>kcal</span></p>
+
+        <img src="images/classic-burger.svg" alt="Classic Burger">
+
+        <h1 id="featured-title">Classic Burger</h1>
+
+        <ul aria-label="Nutrition">
+          <li>Fat – <strong>26 g</strong></li>
+          <li>Saturates – <strong>10 g</strong></li>
+          <li>Sugars – <strong>18 g</strong></li>
+          <li>Salt – <strong>1 g</strong></li>
+        </ul>
+
+        <p>
+          The classic burger is an all-time BBQ favourite. Juicy beef patties
+          with crispy bacon, cheddar, onion, tomato and fresh lettuce, all
+          tucked into a toasted sesame bun.
+        </p>
+
+        <div>
+          <div role="group" aria-label="Quantity">
+            <button type="button" aria-label="Decrease quantity">−</button>
+            <output>0</output>
+            <button type="button" aria-label="Increase quantity">+</button>
+          </div>
+
+          <p><strong>$16</strong></p>
+
+          <button type="button">
+            <img src="images/icon-cart.svg" alt="">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <!-- Pozostałe burgery -->
+    <section aria-labelledby="more-title">
+      <h2 id="more-title">More burgers</h2>
+
+      <ul>
+        <li>
+          <article>
+            <ul aria-label="Slides">
+              <li><button type="button" aria-label="Slide 1" aria-current="true"></button></li>
+              <li><button type="button" aria-label="Slide 2"></button></li>
+              <li><button type="button" aria-label="Slide 3"></button></li>
+              <li><button type="button" aria-label="Slide 4"></button></li>
+            </ul>
+            <p><strong>326</strong> <span>kcal</span></p>
+            <img src="images/double-burger.svg" alt="Double Burger">
+            <h3>Double Burger</h3>
+            <p>Two beef patties, double cheddar, tomato and crisp lettuce.</p>
+            <div>
+              <div role="group" aria-label="Quantity">
+                <button type="button" aria-label="Decrease quantity">−</button>
+                <output>0</output>
+                <button type="button" aria-label="Increase quantity">+</button>
+              </div>
+              <p><strong>$18</strong></p>
+              <button type="button" aria-label="Add Double Burger to cart">
+                <img src="images/icon-cart.svg" alt="">
+              </button>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <ul aria-label="Slides">
+              <li><button type="button" aria-label="Slide 1" aria-current="true"></button></li>
+              <li><button type="button" aria-label="Slide 2"></button></li>
+              <li><button type="button" aria-label="Slide 3"></button></li>
+              <li><button type="button" aria-label="Slide 4"></button></li>
+            </ul>
+            <p><strong>218</strong> <span>kcal</span></p>
+            <img src="images/green-burger.svg" alt="Green Burger">
+            <h3>Green Burger</h3>
+            <p>Spinach bun, crispy chicken, fresh herbs and lemon mayo.</p>
+            <div>
+              <div role="group" aria-label="Quantity">
+                <button type="button" aria-label="Decrease quantity">−</button>
+                <output>0</output>
+                <button type="button" aria-label="Increase quantity">+</button>
+              </div>
+              <p><strong>$20</strong></p>
+              <button type="button" aria-label="Add Green Burger to cart">
+                <img src="images/icon-cart.svg" alt="">
+              </button>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <ul aria-label="Slides">
+              <li><button type="button" aria-label="Slide 1" aria-current="true"></button></li>
+              <li><button type="button" aria-label="Slide 2"></button></li>
+              <li><button type="button" aria-label="Slide 3"></button></li>
+              <li><button type="button" aria-label="Slide 4"></button></li>
+            </ul>
+            <p><strong>280</strong> <span>kcal</span></p>
+            <img src="images/taj-chili-burger.svg" alt="Taj Chili Burger">
+            <h3>Taj Chili Burger</h3>
+            <p>Beetroot bun, spicy beef, pickled onion and mango chili sauce.</p>
+            <div>
+              <div role="group" aria-label="Quantity">
+                <button type="button" aria-label="Decrease quantity">−</button>
+                <output>0</output>
+                <button type="button" aria-label="Increase quantity">+</button>
+              </div>
+              <p><strong>$22</strong></p>
+              <button type="button" aria-label="Add Taj Chili Burger to cart">
+                <img src="images/icon-cart.svg" alt="">
+              </button>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <ul aria-label="Slides">
+              <li><button type="button" aria-label="Slide 1" aria-current="true"></button></li>
+              <li><button type="button" aria-label="Slide 2"></button></li>
+              <li><button type="button" aria-label="Slide 3"></button></li>
+              <li><button type="button" aria-label="Slide 4"></button></li>
+            </ul>
+            <p><strong>312</strong> <span>kcal</span></p>
+            <img src="images/healthy-burger.svg" alt="Healthy Burger">
+            <h3>Healthy Burger</h3>
+            <p>Grilled chicken, avocado sauce, tomato and baby spinach.</p>
+            <div>
+              <div role="group" aria-label="Quantity">
+                <button type="button" aria-label="Decrease quantity">−</button>
+                <output>0</output>
+                <button type="button" aria-label="Increase quantity">+</button>
+              </div>
+              <p><strong>$14</strong></p>
+              <button type="button" aria-label="Add Healthy Burger to cart">
+                <img src="images/icon-cart.svg" alt="">
+              </button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>
